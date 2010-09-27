@@ -253,3 +253,5 @@
 
 (if (file-exists-p *theme-roller-themes-dir*)
   (mapc #'load (directory-files *theme-roller-themes-dir* t ".*elc?$")))
+
+(provide 'theme-roller)
