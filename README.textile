@@ -1,0 +1,38 @@
+h1. theme-roller.el
+
+This package provides a wrapper around color-theme to speed up
+color-theme creation and keep them in sync when new faces are beeing
+customized
+
+h2. Installation
+
+just drop theme-roller.el in your load-path and put the following in your .emacs
+<pre>(require 'theme-roller)
+;; activate your prefered color-theme
+(color-theme-twilight)</pre>
+
+h2. Community
+
+h3. Got a theme?
+
+If you have a theme, feel free to use the `theme-roller-make-theme` macro.
+Also if you create your own themes using theme-roller.el please send me a pull-request
+so that I can distribute your theme with the theme-roller.el package.
+
+h3. Got a question?
+
+Just send me a message and I'll try to get to you as soon as possible.
+
+h3. Found a bug?
+
+Please register a new issue.
+
+h3. Fixed something?
+
+1. Fork theme-roller.el
+2. Create a topic branch - `git checkout -b my_branch`
+3. Make your changes and update the History.txt file
+4. Push to your branch - `git push origin my_branch`
+5. Send me a pull-request for your topic branch
+6. That's it!
+

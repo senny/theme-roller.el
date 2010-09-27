@@ -1,0 +1,6 @@
+== In Git
+
+=== New Features
+* theme-roller-make-theme macro to create color-themes easily
+
+=== Bugfixes
