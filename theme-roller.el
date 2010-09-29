@@ -66,8 +66,10 @@
                                   (code-meta)
                                   (code-error)
                                   (code-warning)
-                                  (code-info)
-                                  (code-addition))
+                                  (diff-added)
+                                  (diff-removed)
+                                  (diff-changed)
+                                  (diff-info))
   (let ((color-theme-function-symbol (intern (concat "color-theme-" (downcase name)))))
     `(progn
        (defun ,color-theme-function-symbol ()
@@ -96,8 +98,10 @@
           (senny-code-meta ((t ,code-meta)))
           (senny-code-error ((t ,code-error)))
           (senny-code-warning ((t ,code-warning)))
-          (senny-code-info ((t ,code-info)))
-          (senny-code-addition ((t ,code-addition)))
+          (senny-diff-added ((t ,diff-added)))
+          (senny-diff-removed ((t ,diff-removed)))
+          (senny-diff-changed ((t ,diff-changed)))
+          (senny-diff-info ((t ,diff-info)))
 
           (border-glyph ((t (nil)))) ;; flat borders
 
@@ -125,6 +129,8 @@
           (font-lock-type-face ((t (:inherit senny-code-type))))
           (font-lock-variable-name-face ((t (:inherit senny-code-variable))))
           (font-lock-warning-face ((t (:inherit senny-code-warning))))
+          (whitespace-line ((t (:inherit senny-code-warning))))
+          (whitespace-tab ((t (:inherit senny-code-warning))))
 
           (jde-java-font-lock-doc-tag-face ((t (:inherit senny-code-documentation :bold t))))
           (jde-java-font-lock-constant-face ((t (:inherit senny-code-constant))))
@@ -133,9 +139,11 @@
           (jde-java-font-lock-package-face ((t (:inherit senny-code-keyword))))
           (jde-java-font-lock-number-face ((t (:inherit senny-code-string))))
           (jde-java-font-lock-code-face ((t (:inherit senny-base-font))))
-          (jde-db-spec-breakpoint-face ((t (:inherit diff-header))))
-          (jde-db-requested-breakpoint-face ((t (:inherit diff-changed))))
-          (jde-db-active-breakpoint-face ((t (:inherit diff-added))))
+
+          ;; TODO: style Breakpoints
+          ;; (jde-db-active-breakpoint-face ((t (:inherit (:inherit senny-code-error)))))
+          ;; (jde-db-requested-breakpoint-face ((t (:inherit senny-code-warning))))
+          ;; (jde-db-spec-breakpoint-face ((t (:inherit senny-diff-added))))
 
           (ecb-default-highlight-face ((t (:inherit senny-brief-highlight))))
 
@@ -143,16 +151,16 @@
           (log4j-font-lock-error-face ((t (:inherit senny-code-constant))))
           (log4j-font-lock-warn-face ((t (:inherit senny-code-keyword))))
 
-          (diff-header ((t (:inherit senny-code-info))))
-          (diff-added ((t (:inherit senny-code-addition))))
-          (diff-removed ((t (:inherit senny-code-error))))
-          (diff-changed ((t (:inherit senny-code-warning))))
+          (diff-header ((t (:inherit senny-diff-info))))
+          (diff-added ((t (:inherit senny-diff-added))))
+          (diff-removed ((t (:inherit senny-diff-removed))))
+          (diff-changed ((t (:inherit senny-diff-warning))))
           (diff-context ((t (:inherit senny-code-comment))))
           (diff-index ((t (:inherit senny-code-comment))))
 
-          (jde-db-active-breakpoint-face ((t (:inherit (:inherit senny-code-error)))))
-          (jde-db-requested-breakpoint-face ((t (:inherit senny-code-warning))))
-          (jde-db-spec-breakpoint-face ((t (:inherit senny-code-addition))))
+          (magit-item-highlight ((t (:background nil :bold t))))
+          (magit-diff-add ((t (:inherit senny-diff-added))))
+          (magit-diff-del ((t (:inherit senny-diff-removed))))
 
           (flymake-errline ((t (:inherit senny-code-error))))
           (flymake-warnline ((t (:inherit senny-code-warning))))
@@ -234,8 +242,6 @@
           (erb-exec-delim-face ((t (:inherit senny-code-meta))))
           (erb-out-face ((t (:inherit senny-durable-highlight))))
           (erb-out-delim-face ((t (:inherit senny-code-meta))))
-
-          (magit-item-highlight ((t (:inherit senny-durable-highlight))))
 
           (link ((t (:inherit senny-link))))
           (show-paren-match ((t (:inherit senny-brief-highlight))))
