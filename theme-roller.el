@@ -69,6 +69,7 @@
                                   (diff-added)
                                   (diff-removed)
                                   (diff-changed)
+                                  (diff-context)
                                   (diff-info))
   (let ((color-theme-function-symbol (intern (concat "color-theme-" (downcase name)))))
     `(progn
@@ -102,6 +103,7 @@
           (senny-diff-removed ((t ,diff-removed)))
           (senny-diff-changed ((t ,diff-changed)))
           (senny-diff-info ((t ,diff-info)))
+          (senny-diff-context ((t ,diff-context)))
 
           (border-glyph ((t (nil)))) ;; flat borders
 
@@ -152,15 +154,18 @@
           (log4j-font-lock-warn-face ((t (:inherit senny-code-keyword))))
 
           (diff-header ((t (:inherit senny-diff-info))))
+          (diff-file-header ((t (:inherit senny-diff-info :bold t))))
           (diff-added ((t (:inherit senny-diff-added))))
           (diff-removed ((t (:inherit senny-diff-removed))))
           (diff-changed ((t (:inherit senny-diff-warning))))
-          (diff-context ((t (:inherit senny-code-comment))))
+          (diff-context ((t (:inherit senny-diff-context))))
           (diff-index ((t (:inherit senny-code-comment))))
+          (diff-refine-change ((t (:inherit senny-code-comment))))
 
           (magit-item-highlight ((t (:background nil :bold t))))
           (magit-diff-add ((t (:inherit senny-diff-added))))
           (magit-diff-del ((t (:inherit senny-diff-removed))))
+          (magit-diff-none ((t (:inherit senny-diff-context))))
 
           (flymake-errline ((t (:inherit senny-code-error))))
           (flymake-warnline ((t (:inherit senny-code-warning))))
