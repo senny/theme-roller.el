@@ -26,10 +26,11 @@
  :code-string        (:foreground "#409b1c")
  :code-comment       (:italic t :foreground "#999999" :slant italic)
  :code-documentation (:foreground "#409b1c")
- :code-function      (:inherit theme-roller--base-font)
+ :code-function      (:inherit theme-roller--base-font :bold t)
  :code-meta          (:foreground "#3a4a64")
  :code-error         (:bold t :background "#9d1e15" :foreground "#f8f8f8")
- :code-warning       (:italic t :foreground "#9d1e15")
+ ;; :code-warning       (:italic t :foreground "#9d1e15")
+ :code-warning       (:background "#ffe4b5")
  ;; TODO: style diff faces
  :diff-removed       (:background "IndianRed1")
  :diff-changed       (:background "burlywood3")
