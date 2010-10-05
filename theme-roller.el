@@ -261,7 +261,7 @@
           (highlight ((t (:inherit theme-roller--brief-highlight))))
           (hl-line ((t (:inherit theme-roller--durable-highlight))))
           (left-margin ((t (nil)))))))
-       (add-to-list 'color-themes '(,color-theme-function-symbol ,name "Yves Senn"))
+       (add-to-list 'color-themes '(,color-theme-function-symbol ,name "Theme Roller"))
        )))
 
 (if (file-exists-p *theme-roller-themes-dir*)
