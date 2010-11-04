@@ -44,7 +44,7 @@
 (defvar theme-roller--themes-dir
   (concat (file-name-directory (or load-file-name buffer-file-name)) "themes"))
 
-(defvar theme-roller--cycle-counter 1
+(defvar theme-roller--cycle-counter 0
   "counter used by theme-roller to cycle between the active themes")
 
 (eval-when-compile (require 'color-theme))
@@ -52,6 +52,12 @@
 (when (fboundp 'color-theme-initialize)
   (color-theme-initialize))
 (setq color-theme-is-global t)
+
+(defun theme-roller-activate ()
+  "activates the first theme from theme-roller-active-themes list"
+  (interactive)
+  (setq theme-roller--cycle-counter 1)
+  (funcall (first theme-roller-active-themes)))
 
 (defun theme-roller-cycle ()
   (interactive)
