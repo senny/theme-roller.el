@@ -51,7 +51,8 @@
 (global-font-lock-mode t)
 (when (fboundp 'color-theme-initialize)
   (color-theme-initialize))
-(setq color-theme-is-global t)
+(setq color-theme-is-global t
+      font-lock-maximum-decoration t)
 
 (defun theme-roller-activate ()
   "activates the first theme from theme-roller-active-themes list"
