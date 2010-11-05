@@ -19,6 +19,10 @@ If you have a theme, feel free to use the `theme-roller-make-theme` macro.
 Also if you create your own themes using theme-roller.el please send me a pull-request
 so that I can distribute your theme with the theme-roller.el package.
 
+h4. Contributed Themes
+
+- Railscats Theme (ported from TextMate) by Christoph Ritler
+
 h3. Got a question?
 
 Just send me a message and I'll try to get to you as soon as possible.
