@@ -30,13 +30,16 @@
 
 ;;; Commentary:
 
+;; (color-theme-lazy)
+;; (color-theme-ruby-blue)
 ;; (color-theme-twilight)
 ;; (color-theme-github)
+;; (color-theme-railscasts)
 
 ;;; Code:
 
 (defcustom theme-roller-active-themes
-  '(color-theme-lazy color-theme-twilight color-theme-ruby-blue)
+  '(color-theme-lazy color-theme-twilight color-theme-ruby-blue color-theme-github color-theme-railscasts)
   "the list of active themes"
   :group 'theme-roller
   :type 'list)
