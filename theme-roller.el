@@ -69,9 +69,11 @@
 
 (defun theme-roller-cycle ()
   (interactive)
-  (let ((theme-number (% theme-roller--cycle-counter
-                         (length theme-roller-active-themes))))
-    (funcall (nth theme-number theme-roller-active-themes))
+  (let* ((theme-number (% theme-roller--cycle-counter
+                          (length theme-roller-active-themes)))
+         (theme (nth theme-number theme-roller-active-themes)))
+    (print theme)
+    (funcall theme)
     (incf theme-roller--cycle-counter)))
 
 (require 'theme-roller-macro)
