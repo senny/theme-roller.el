@@ -5,7 +5,7 @@
 (theme-roller-make-theme
  "IR Black"
  ((background-color . "#222222")
-  (background-mode . light)
+  (background-mode . dark)
   (border-color . "black")
   (cursor-color . "#FFFFFF")
   (foreground-color . "#EDEDED")
@@ -29,10 +29,9 @@
  :code-meta          (:foreground "#8996A8")
  :code-error         (:bold t :background "#562D56BF" :foreground "#FD5FF1")
  :code-warning       (:italic t :underline t :foreground "#FD5FF1")
- ;; TODO: style diff faces
  :diff-removed       (:background "#420E09" :foreground "#F8F8F8")
  :diff-changed       (:background "#4A410D" :foreground "#F8F8F8")
- :diff-info          (:background "#0E2231" :italic t :foreground "#F8F8F8")
+ :diff-info          (:background "#0E2231" :foreground "#F8F8F8" :italic t)
  :diff-added         (:background "#253B22" :foreground "#F8F8F8")
  :diff-context       (:inherit theme-roller--base-font)
  :code-escape-char   (:foreground "#FF8000"))
