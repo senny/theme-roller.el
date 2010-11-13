@@ -1,6 +1,5 @@
 ;; Ruby Blue Color Theme for Emacs.
 ;;
-;; MIT License Copyright (c) 2008 Yves Senn <yves.senn@gmx.ch>
 ;; Credits due to the excellent TextMate Ruby Blue theme
 ;;
 (theme-roller-make-theme

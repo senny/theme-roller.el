@@ -1,6 +1,6 @@
 ;; Railscasts Color Theme for Emacs.
 ;;
-;; MIT License Copyright (c) 2010 Christoph Ritler <christoph.ritler@garaio.com>
+;; Contribution by: Christoph Ritler <christoph.ritler@garaio.com>
 ;; Credits due to the excellent TextMate Railscasts theme
 ;;
 (theme-roller-make-theme

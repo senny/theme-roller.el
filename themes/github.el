@@ -1,3 +1,5 @@
+;; GitHub Color Theme for Emacs.
+;;
 (theme-roller-make-theme
  "Github"
  ((background-color . "#f8f8ff")

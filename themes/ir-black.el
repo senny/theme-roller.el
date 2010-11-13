@@ -1,6 +1,5 @@
 ;; IR Black Color Theme for Emacs.
 ;;
-;; MIT License Copyright (c) 2010 Yves Senn <yves.senn@gmx.ch>
 ;; Credits due to the excellent TextMate IR_Black theme
 ;;
 (theme-roller-make-theme

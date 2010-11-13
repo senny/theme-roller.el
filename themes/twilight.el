@@ -1,6 +1,5 @@
 ;; Twilight Color Theme for Emacs.
 ;;
-;; MIT License Copyright (c) 2008 Marcus Crafter <crafterm@redartisan.com>
 ;; Credits due to the excellent TextMate Twilight theme
 ;;
 (theme-roller-make-theme
