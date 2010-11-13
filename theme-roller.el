@@ -43,7 +43,13 @@
 ;;; Code:
 
 (defcustom theme-roller-active-themes
-  '(color-theme-lazy color-theme-twilight color-theme-ruby-blue color-theme-github color-theme-railscasts)
+  '(color-theme-lazy
+    color-theme-twilight
+    color-theme-ruby-blue
+    color-theme-github
+    color-theme-monokai
+    color-theme-railscasts
+    color-theme-ir-black)
   "the list of active themes"
   :group 'theme-roller
   :type 'list)
