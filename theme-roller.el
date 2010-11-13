@@ -71,8 +71,9 @@
   (interactive)
   (let* ((theme-number (% theme-roller--cycle-counter
                           (length theme-roller-active-themes)))
-         (theme (nth theme-number theme-roller-active-themes)))
-    (print theme)
+         (theme (nth theme-number theme-roller-active-themes))
+         (theme-name (second (assoc theme color-themes))))
+    (message theme-name)
     (funcall theme)
     (incf theme-roller--cycle-counter)))
 
