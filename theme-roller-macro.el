@@ -122,6 +122,9 @@
             (magit-diff-add ((t (:inherit theme-roller--diff-added))))
             (magit-diff-del ((t (:inherit theme-roller--diff-removed))))
             (magit-diff-none ((t (:inherit theme-roller--diff-context))))
+            (magit-log-sha1 ((t (:inherit theme-roller--code-keyword))))
+            (magit-log-head-label-remote ((t (:inherit theme-roller--code-string :box t))))
+            (magit-log-head-label-local ((t (:inherit theme-roller--code-variable :box t))))
 
             (flymake-errline ((t (:inherit theme-roller--code-error))))
             (flymake-warnline ((t (:inherit theme-roller--code-warning))))
