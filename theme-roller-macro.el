@@ -207,6 +207,11 @@
             (erb-out-face ((t (:inherit theme-roller--durable-highlight))))
             (erb-out-delim-face ((t (:inherit theme-roller--code-meta))))
 
+            (jabber-roster-user-online ((t (:inherit theme-roller--code-keyword))))
+            (jabber-roster-user-away ((t (:inherit theme-roller--code-string))))
+            (jabber-chat-prompt-local ((t (:inherit theme-roller--code-constant))))
+            (jabber-chat-prompt-foreign ((t (:inherit theme-roller--code-keyword))))
+
             (link ((t (:inherit theme-roller--link))))
             (show-paren-match ((t (:inherit theme-roller--brief-highlight))))
             (show-paren-mismatch ((t (:inherit theme-roller--code-error))))
