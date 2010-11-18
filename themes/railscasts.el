@@ -14,7 +14,7 @@
  :base-font          (:foreground "white")
  :selection          (:background "#424242")
  :brief-highlight    (:background "#424242" :foreground "white")
- :durable-highlight  (:background "#424242")
+ :durable-highlight  (:background "#010101")
  :link               (:underline t :foreground "#A1C260")
  :mode-line          (:background "#B38553" :foreground "black")
  :minibuffer-prompt  (:background "#232323" :foreground "#A1C260")

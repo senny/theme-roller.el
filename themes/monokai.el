@@ -20,7 +20,7 @@
  :code-variable      (:foreground "#66D9EF")
  :code-reference     (nil)
  :code-constant      (:foreground "#AE81FF")
- :code-type          (:foreground "#FD971F")
+ :code-type          (:foreground "#E6DB74")
  :code-keyword       (:foreground "#F92672")
  :code-string        (:foreground "#A6E22E")
  :code-comment       (:foreground "#75715E")
