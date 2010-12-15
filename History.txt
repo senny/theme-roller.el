@@ -4,3 +4,4 @@
 * theme-roller-make-theme macro to create color-themes easily
 
 === Bugfixes
+* 2010-15-12 / update ir-black theme (source: http://blog.toddwerth.com/entry_files/8/ir_black.vim)

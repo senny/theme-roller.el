@@ -4,18 +4,18 @@
 ;;
 (theme-roller-make-theme
  "IR Black"
- ((background-color . "#222222")
+ ((background-color . "black")
   (background-mode . dark)
-  (border-color . "black")
+  (border-color . "#FFFFFF")
   (cursor-color . "#FFFFFF")
   (foreground-color . "#EDEDED")
   (mouse-color . "#bcd5fa"))
  :base-font          (:stipple nil :foreground "#EDEDED" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal)
- :selection          (:background "#333333")
+ :selection          (:background "#1D1E2C")
  :brief-highlight    (:background "#acc3e6")
  :durable-highlight  (:background "#000000")
  :link               (:foreground "blue1" :underline t)
- :mode-line          (:background "#bcd5fa" :foreground "black")
+ :mode-line          (:background "#202020" :foreground "#CCCCCC")
  :minibuffer-prompt  (:foreground "#FF73FD")
  :code-variable      (:foreground "#C6C5FE")
  :code-reference     (nil)
