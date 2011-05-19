@@ -4,3 +4,4 @@
 * theme-roller-make-theme macro to create color-themes easily
 
 === Bugfixes
+* theme-rolle can be byte-compiled [Kovensky (Diogo Franco)]
