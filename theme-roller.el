@@ -60,7 +60,7 @@
 (defvar theme-roller--cycle-counter 0
   "counter used by theme-roller to cycle between the active themes")
 
-(eval-when-compile (require 'color-theme))
+(require 'color-theme)
 (global-font-lock-mode t)
 (when (fboundp 'color-theme-initialize)
   (color-theme-initialize))
