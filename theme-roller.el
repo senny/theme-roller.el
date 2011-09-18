@@ -54,6 +54,12 @@
   :group 'theme-roller
   :type 'list)
 
+(defcustom theme-roller-default-theme
+  'color-theme-lazy
+  "the theme, which is used by default, when you activate theme-roller"
+  :group 'theme-roller
+  :type 'symbol)
+
 (defvar theme-roller--themes-dir
   (concat (file-name-directory (or load-file-name buffer-file-name)) "themes"))
 
@@ -71,7 +77,7 @@
   "activates the first theme from theme-roller-active-themes list"
   (interactive)
   (setq theme-roller--cycle-counter 1)
-  (funcall (first theme-roller-active-themes)))
+  (funcall theme-roller-default-theme))
 
 (defun theme-roller-cycle ()
   (interactive)
